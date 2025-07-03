@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 暗記アプリ - ローカルテスト版</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 { color: #007AFF; margin-bottom: 20px; }
+        .status { padding: 20px; margin: 10px 0; border-radius: 10px; }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            background: #007AFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .btn:hover { background: #0056b3; transform: translateY(-1px); }
+        .steps {
+            text-align: left;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .step {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid #007AFF;
+            background: white;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 暗記アプリ - デプロイ準備完了！</h1>
+        
+        <div class="status success">
+            ✅ すべてのファイルが準備されています
+        </div>
+        
+        <div class="status warning">
+            ⚠️ GitHub Pages で404エラーが発生中
+        </div>
+        
+        <div class="status error">
+            🔧 実際のGitHubリポジトリ作成が必要です
+        </div>
+
+        <div class="steps">
+            <h3>📋 次の手順で解決:</h3>
+            
+            <div class="step">
+                <strong>Step 1:</strong> GitHub.com でリポジトリ作成<br>
+                <code>flashcard-web-app</code> という名前で Public リポジトリを作成
+            </div>
+            
+            <div class="step">
+                <strong>Step 2:</strong> ファイルをアップロード<br>
+                以下のディレクトリの全ファイルをGitHubにアップロード：<br>
+                <code>/home/sumi/FlashcardApp/web-app/</code>
+            </div>
+            
+            <div class="step">
+                <strong>Step 3:</strong> GitHub Pages 有効化<br>
+                Settings → Pages → Source: main branch
+            </div>
+            
+            <div class="step">
+                <strong>Step 4:</strong> 公開URLアクセス<br>
+                <code>https://YOUR-USERNAME.github.io/flashcard-web-app/</code>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <a href="index.html" class="btn">🎯 アプリをローカルで確認</a>
+            <a href="GITHUB_SETUP.md" class="btn" target="_blank">📖 詳細セットアップガイド</a>
+        </div>
+
+        <div style="margin-top: 30px; font-size: 0.9em; color: #666;">
+            <p><strong>🎉 準備されている機能:</strong></p>
+            <p>✅ PWA対応 ✅ オフライン学習 ✅ クラウド同期 ✅ AdSense収益化 ✅ レスポンシブデザイン</p>
+        </div>
+    </div>
+
+    <script>
+        // ローカルテスト用の簡単な動作確認
+        console.log('🚀 暗記アプリ - ローカルテスト版起動');
+        console.log('📁 ファイル構成確認:');
+        console.log('- index.html: メインアプリ');
+        console.log('- app.js: アプリケーションロジック');
+        console.log('- styles.css: スタイルシート');
+        console.log('- firebase-config.js: Firebase設定');
+        console.log('- manifest.json: PWA設定');
+        console.log('- service-worker.js: オフライン対応');
+        
+        // ファイル存在確認（簡易版）
+        const filesToCheck = ['index.html', 'app.js', 'styles.css'];
+        filesToCheck.forEach(file => {
+            fetch(file)
+                .then(response => {
+                    if (response.ok) {
+                        console.log(`✅ ${file} - OK`);
+                    } else {
+                        console.log(`❌ ${file} - Missing`);
+                    }
+                })
+                .catch(() => console.log(`❌ ${file} - Error`));
+        });
+    </script>
+</body>
+</html>

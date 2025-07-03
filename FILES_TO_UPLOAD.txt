@@ -1,0 +1,29 @@
+📁 GitHub にアップロードするファイル一覧
+
+📍 場所: /home/sumi/FlashcardApp/web-app/
+
+🔥 必須ファイル（優先度順）:
+1. index.html          ⭐ 最重要 - メインページ
+2. app.js              ⭐ 重要   - アプリ機能
+3. styles.css          ⭐ 重要   - デザイン
+4. manifest.json       📱 PWA対応
+5. service-worker.js   🔄 オフライン対応
+
+🎨 アイコンファイル:
+6. icon-192.png        📱 PWAアイコン
+7. icon-512.png        📱 PWAアイコン
+
+⚙️ 設定ファイル:
+8. firebase-config.js  ☁️ クラウド同期
+
+📖 ドキュメント:
+9. README.md           📝 プロジェクト説明
+
+⚡ アップロード手順:
+1. GitHub で新規リポジトリ作成
+2. 上記ファイルを一括ドラッグ&ドロップ
+3. Commit message: "🚀 Launch flashcard app"
+4. Settings → Pages → Source: main branch
+5. 完了！
+
+🌐 公開URL: https://YOUR-USERNAME.github.io/flashcard-web-app/

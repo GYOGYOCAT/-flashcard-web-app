@@ -1,0 +1,7 @@
+127.0.0.1 - - [03/Jul/2025 17:23:06] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [03/Jul/2025 17:23:06] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [03/Jul/2025 17:23:06] "GET /firebase-config.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Jul/2025 17:23:06] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Jul/2025 17:23:06] code 404, message File not found
+127.0.0.1 - - [03/Jul/2025 17:23:06] "GET /service-worker.js HTTP/1.1" 404 -
+127.0.0.1 - - [03/Jul/2025 17:24:10] "GET / HTTP/1.1" 200 -
